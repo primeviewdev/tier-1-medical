@@ -1,0 +1,229 @@
+/*
+Theme Name: Tier 1 - Medical Theme
+Theme URI: http://www.primeview.com
+Github Theme URI: https://github.com/primeviewdev/rocket-theme
+Author: PrimeView
+Template: rocket-theme-plus
+Description: Child Theme
+Version: v1.0.0
+*/
+:root{
+    /*  */
+    /* Max-width */
+    --max-container-width: 1140px;
+
+    /* Sections */
+    --hp-section-padding: 60px 0px;
+
+    /* Colors */
+    --primary-color: #6EC1E4; /* Declare */
+    --secondary-color: #54595F; /* Declare */
+    --link-color: ; /* Declare */
+    --link-hover-color: ; /* Declare */
+    
+    /* Fonts */
+    --base-font-family: 'Roboto', sans-serif; /* Declare */
+    --base-font-size: 18px;  /* Declare */
+    --heading-color: var(--primary-color);
+    --h1-font-size: 40px; /* Declare */
+    --h2-font-size: calc(var(--h1-font-size)-8px);
+    --h3-font-size: calc(var(--h1-font-size)-12px);
+    --h4-font-size: calc(var(--h1-font-size)-16px);
+
+    /* Buttons */
+    --btn-font-size: 26px;
+    --btn-primary-bg-color: var(--primary-color);
+    --btn-primary-font-color: var(--secondary-color);
+    --btn-primary-hover-bg: ;
+    --btn-primary-hover-font: ;
+    --btn-primary-padding: 15px 50px; /* Declare */
+    --btn-primary-bd-radius: 25px;
+    --btn-primary-hover-bd-radius: ;
+    --btn-primary-font-size: var(--btn-font-size); /* Declare */
+
+}
+body {
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    line-height: 1.5;
+}
+#page .container {
+    max-width: var(--max-container-width);
+}
+h1,h2,h3,h4,h5 {
+    color: var(--primary-color);    
+    margin-bottom: 20px;
+}
+a {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-hover-color);
+}
+.mobile-img {
+    display: none;
+}
+img, iframe {
+    max-width: 100%;
+}
+.entry-content {
+    margin-bottom: 60px;
+}
+/* Buttons */
+.btn.btn-primary {
+    background-color: var(--btn-primary-bg-color);
+    color: var(--btn-primary-font-color);
+    border-radius: var(--btn-primary-bd-radius);
+    box-shadow: 0px 2px 1px 0px var(--btn-primary-font-color);
+    padding: var(--btn-primary-padding);
+    border-color: transparent;
+    font-weight: normal;
+    font-size: var(--btn-primary-font-size);
+    transition: all 0.1s ease-in;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+    border-radius: var(--btn-primary-hover-bd-radius)!important;
+    border-color: var(--btn-primary-bg-color)!important;
+    box-shadow: 0px 2px 1px 0px var(--btn-primary-bg-color)!important;
+    background-color: var(--primary-color)!important;
+    color: #fff;
+}
+
+/* Header */
+.main-header {
+    padding: 15px 0px;
+    border-bottom: 3px solid var(--primary-color);
+}
+.main-header.navbar-expand-lg .navbar-nav .nav-link {
+    margin: 0px 15px;
+}
+.main-header nav#nav-menu #bs-navbar-collapse{
+    justify-content: flex-end;
+}
+.main-header button.navbar-toggler {
+    display: none;
+}
+a.btn.btn-phone {
+    width: 100%;
+    font-size: 20px;
+}
+a.btn.btn-phone .fa {
+    margin-right: 5px;
+    color: var(--primary-color);
+    font-family: 'FontAwesome';
+}
+/* Image half Section */
+.homepage-template .section.half-image-bg,
+.section.half-image-bg {
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 0px;
+}
+.section.half-image-bg .col-lg-6,
+.section.half-image-bg .col-lg-5 {
+    padding: 100px 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Footer */
+footer .site_main_footer {
+    padding-top: 60px;
+    border-top: 7px ​solid var(--secondary-color);
+}
+footer ul {
+    padding-left: 0px;
+    list-style: none;
+}
+footer ul.soc-med li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 26px;
+}
+footer ul.soc-med a:hover:before{
+    content: '';
+}
+footer ul.soc-med a:hover{
+    margin-left: 0px;
+}
+footer ul a{
+    margin-left: 0px;
+    transition: all 0.3s ease;
+}
+footer ul a:hover:before{
+    content: '►';
+}
+footer ul a:hover {
+    color: var(--primary-color);
+    margin-left: 5px;
+    text-decoration: none;
+}
+footer ul.soc-med a:hover:before{
+    content: '';
+}
+footer .site_copyright .container {
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 70px;
+}
+footer .site_copyright p {
+    margin-bottom: 0px;
+}
+
+/* Innerpage */
+header.innerpage-header {
+    padding: 50px 0px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px
+}
+header.innerpage-header h1 {
+    margin-bottom: 0px;
+}
+.innerpage .entry-content a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* Sidebar */
+div#secondary .widget {
+    margin-bottom: 40px;
+}
+
+div#secondary .widget .widget-title {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+/* CF7 CSS */
+.wpcf7-form-control-wrap input[type=text], 
+.wpcf7-form-control-wrap input[type=email], 
+.wpcf7-form-control-wrap textarea {
+    padding: 10px 20px;
+    border: 0px transparent;
+    background-color: #d1d1d1;
+    max-width: 100%;
+}
+.wpcf7-form label,
+.wpcf7-form-control-wrap,
+.wpcf7-form-control-wrap input[type=text], 
+.wpcf7-form-control-wrap input[type=email], 
+.wpcf7-form-control-wrap textarea {
+    width: 100%;
+}
+
+/* FSMS */
+.morphsearch-content {
+    display: none;
+}
+#morphsearch .morphsearch-close::before, 
+#morphsearch .morphsearch-close::after{
+    width: 6px;
+    opacity: 1;
+}
